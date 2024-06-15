@@ -1,0 +1,50 @@
+Config.dataset_loader = 'llff'
+Config.near = 0.2
+Config.far = 1e6
+Config.factor = 2
+Config.batch_size = 512
+Config.compute_normal_metrics = True
+Config.orientation_loss_target = 'normals_pred'
+Config.predicted_normal_loss_mult = 3e-4
+Config.orientation_coarse_loss_mult = 0.01
+Config.predicted_normal_coarse_loss_mult = 3e-5
+Config.adam_eps = 1e-8
+
+
+
+Model.raydist_fn = @jnp.reciprocal
+Model.opaque_background = True
+Model.num_levels = 2
+Model.anneal_slope = 0.
+Model.dilation_multiplier = 0.
+Model.dilation_bias = 0.
+Model.single_jitter = False
+Model.resample_padding = 0.01
+
+
+PropMLP.warp_fn = @coord.contract
+PropMLP.net_depth = 4
+PropMLP.net_width = 256
+PropMLP.disable_density_normals = True
+PropMLP.disable_rgb = True
+
+NerfMLP.warp_fn = @coord.contract
+NerfMLP.net_depth = 8
+NerfMLP.net_width = 512
+NerfMLP.disable_density_normals = False
+NerfMLP.net_depth_viewdirs = 8
+NerfMLP.enable_pred_normals = True
+NerfMLP.use_directional_enc = True
+NerfMLP.use_reflections = True
+NerfMLP.deg_view = 5
+NerfMLP.enable_pred_roughness = True
+NerfMLP.use_diffuse_color = True
+NerfMLP.use_specular_tint = True
+NerfMLP.use_n_dot_v = True
+NerfMLP.bottleneck_width = 128
+NerfMLP.density_bias = 0.5
+NerfMLP.max_deg_point = 16
+
+
+
+
