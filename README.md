@@ -1,5 +1,5 @@
 # MuSt-NeRF: A Multi-Stage NeRF Pipeline to Enhance Novel View Synthesis 
-This repository contains the code implementation for MuSt-NeRF, a multi-stage NeRF pipeline designed to enhance novel view synthesis in complex real-world scenes. MuSt-NeRF addresses the limitations of purely photometric approaches by strategically combining geometry-guided and photometry-driven reconstruction techniques. This work was completed as part of a master's thesis at the Embedded and Artificially intelligent VISion Engineering (EAVISE) research group of KU Leuven.
+This repository contains the code implementation for MuSt-NeRF, a multi-stage NeRF pipeline designed to enhance novel view synthesis in complex real-world scenes. MuSt-NeRF addresses the limitations of purely photometric approaches by strategically combining geometry-guided and photometry-driven reconstruction techniques. This work was completed as part of a master's thesis at the EAVISE research group, ESAT-PSI, KU Leuven.
 
 ## Directory Structure
 
