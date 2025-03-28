@@ -1,5 +1,7 @@
 # MuSt-NeRF: A Multi-Stage NeRF Pipeline to Enhance Novel View Synthesis 
-This repository contains the code implementation for MuSt-NeRF, a multi-stage NeRF pipeline designed to enhance novel view synthesis in complex real-world scenes. MuSt-NeRF addresses the limitations of purely photometric approaches by strategically combining geometry-guided and photometry-driven reconstruction techniques. This work was completed as part of a master's thesis at the EAVISE research group, ESAT-PSI, KU Leuven.
+**✨Best Student Paper Award at the International Conference on Computer Vision Theory and Applications (VISAPP 2025) ✨**
+
+This repository contains the code implementation for MuSt-NeRF, a multi-stage NeRF pipeline designed to enhance novel view synthesis in complex real-world scenes. MuSt-NeRF addresses the limitations of purely photometric approaches by strategically combining geometry-guided and photometry-driven reconstruction techniques. This work was completed as part of a master's thesis at the EAVISE research group, ESAT-PSI, KU Leuven. 
 
 ## Directory Structure
 
@@ -121,4 +123,21 @@ You may need to reduce the batch size (`Config.batch_size` or `run_nerf.py`) to 
 ### Acknowledgements
 We thank [JAXNeRF](https://github.com/google-research/google-research/tree/master/jaxnerf) and [nerf-pytorch](https://github.com/yenchenlin/nerf-pytorch), from which this repository borrows code. 
 
-   
+## Citation
+If you use/build on this work, please cite the work as follows:
+
+```
+@conference{visapp25,
+author={Sudarshan Raghavan Iyengar and Subash Sharma and Patrick Vandewalle},
+title={MuSt-NeRF: A Multi-Stage NeRF Pipeline to Enhance Novel View Synthesis},
+booktitle={Proceedings of the 20th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 2: VISAPP},
+year={2025},
+pages={563-573},
+publisher={SciTePress},
+organization={INSTICC},
+doi={10.5220/0013169100003912},
+isbn={978-989-758-728-3},
+issn={2184-4321},
+}
+
+```   
